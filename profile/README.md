@@ -19,9 +19,9 @@ This project is part of a professional portfolio to showcase full-cycle secure e
 ### ✅ Current Functional Requirements (MVP)
 
 1. Store passwords securely in onboard flash memory.
-2. Encrypt passwords using AES-CBC with a user-supplied master key.
+2. Encrypt passwords using AES-CTR with a hashed fingerprint template.
 3. Retrieve stored passwords only with correct authentication.
-4. Store the master key securely using **hash + salt**.
+4. Store the master key securely using **hash + salt**, in our secure module ATEC608.
 5. Provide a password suggestion tool:
    - Custom length
    - Customizable character set: letters, numbers, symbols
