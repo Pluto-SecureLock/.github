@@ -45,7 +45,7 @@ Following the **STRIDE** model:
 | Threat | Risk | Mitigation |
 |--------|------|------------|
 | **Spoofing** | Unauthorized access to secrets | Salted hash comparison of master key |
-| **Tampering** | Modification of saved credentials | AES-CBC encryption with per-entry IV |
+| **Tampering** | Modification of saved credentials | AES-CTR encryption with per-entry IV, use ATEC608 to ensure secure Boot |
 | **Repudiation** | Lack of traceability | (Planned) Optional logging system |
 | **Information Disclosure** | Reading `/keys.db` file directly | All data encrypted with strong symmetric encryption |
 | **Denial of Service** | File deletion or filesystem corruption | Physical recovery mode and backups |
@@ -55,7 +55,7 @@ Following the **STRIDE** model:
 
 ## 🔐 Phase 3: Security by Design
 
-- **Symmetric encryption**: AES-CBC with 16-byte blocks
+- **Symmetric encryption**: AES-CTR with 16-byte blocks
 - **Authentication**: SHA256 + salt hash of master key
 - **Data integrity**: Ensured via IV separation and optional HMAC (future)
 - **Separation of concerns**: clean modular architecture
