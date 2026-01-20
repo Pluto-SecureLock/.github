@@ -1,6 +1,6 @@
 # 🔐 Pluto-Secure – Encrypted Password Manager for Microcontrollers
 
-> A professional embedded security project developed in CircuitPython for the Arduino Nano RP2040 Connect.
+> A professional embedded security project developed in CircuitPython for the Arduino Nano RP2040 Connect. -> Transitioning to C and our custom RP2040 Board
 
 **Pluto-Secure** is an experimental password and credential manager built from scratch to demonstrate secure design and encryption practices in constrained environments. It leverages CircuitPython and cryptographic modules to store, encrypt, and retrieve passwords securely.
 
@@ -11,6 +11,7 @@ This project is part of a professional portfolio to showcase full-cycle secure e
 ## 🎯 Project Goal
 
 > Build a complete, secure password vault from concept to implementation, demonstrating secure architecture, cryptography, and hardware integration.
+> Consider the usability and easy to use to it maximum level, understand the customer and add human-to-machine interaction. 
 
 ---
 
@@ -25,16 +26,15 @@ This project is part of a professional portfolio to showcase full-cycle secure e
 5. Provide a password suggestion tool:
    - Custom length
    - Customizable character set: letters, numbers, symbols
+6. Communicate via Serial to chrome extension in a secure way and receive commands from it.
+7. Perform a backup session with user provided key.
 
 ---
 
 ### 🧩 Future Requirements
 
-6. Automatically identify which key to provide based on login page or context.
-7. Associate usernames and passwords with services or sites.
-8. Enable local password management with optional user accounts.
-9. Optional display-based UI (OLED or small screen).
-10. Secure export/import of encrypted data.
+8. Automatically identify which key to provide based on login page or context.
+9. Secure export/import of encrypted data.
 
 ---
 
